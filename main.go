@@ -278,7 +278,7 @@ func HandleSystemInfo(w http.ResponseWriter, r *http.Request) {
 	w.Write(jsonData)
 }
 
-func main() {
+func Http_call() {
 	http.HandleFunc("/system-info", HandleSystemInfo)
 
 	port := 8083
